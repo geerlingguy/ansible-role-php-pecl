@@ -1,37 +1,40 @@
-# Ansible Role: PHP PECL extensions
+# Ansible php-pecl
 
 Installs PHP PECL extensions on servers with PHP already installed.
 
-## Requirements
-
-PHP must already be installed on the server, so the `pecl` command can be run.
-
 ## Role Variables
 
-Available variables are listed below, along with default values (see `vars/main.yml`):
+Available variables are listed below, along with default values:
 
-    php_pecl_extensions:
-      - xdebug
-      ...
+ - *php_pecl_extensions*: A list of extensions that should be installed via `pecl install`.
+ - *php_pecl_apt_packages*: The list of apt packages to install, you can use this variables to install libraries
+   needed by the installed PECL extensions (ex. install ```libcurl3-openssl-dev``` when installing the ```pecl_http```
+   extensions. Defaults to ```[php-pear]```.
 
-A list of extensions that should be installed via `pecl install`.
-
-## Dependencies
-
-  - geerlingguy.php
-
-## Example Playbook
+## Example Usages
 
     - hosts: webservers
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.php-pecl }
+        - role: geerlingguy.php-pecl
+          php_pecl_extensions:
+           - xdebug
 
-*Inside `vars/main.yml`*:
 
-    php_pecl_extensions:
-      - xdebug
+    - hosts: webservers
+      vars_files:
+        - vars/main.yml
+      roles:
+        - role: geerlingguy.php-pecl
+          php_pecl_extensions:
+            - yaml
+          php_pecl_apt_packages:
+            - make
+            - php-pear
+            - php5-dev
+            - libyaml-dev
+
 
 ## TODO
 

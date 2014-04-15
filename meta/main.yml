@@ -1,39 +1,12 @@
 ---
-dependencies:
-  - { role: geerlingguy.php }
-
 galaxy_info:
-  author: geerlingguy
+  author: Pierre Buyle, geerlingguy
   description: PHP PECL extension installation.
-  company: "Midwestern Mac, LLC"
+  company: "Pheromone"
   license: "license (BSD, MIT)"
   min_ansible_version: 1.4
   platforms:
-  - name: EL
-    versions:
-    - all
-  - name: GenericUNIX
-    versions:
-    - all
-  - name: Fedora
-    versions:
-    - all
-  - name: opensuse
-    versions:
-    - all
-  - name: GenericBSD
-    versions:
-    - all
-  - name: FreeBSD
-    versions:
-    - all
   - name: Ubuntu
-    versions:
-    - all
-  - name: SLES
-    versions:
-    - all
-  - name: GenericLinux
     versions:
     - all
   - name: Debian
