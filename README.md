@@ -17,7 +17,7 @@ Available variables are listed below, along with default values:
       vars_files:
         - vars/main.yml
       roles:
-        - role: geerlingguy.php-pecl
+        - role: php-pecl
           php_pecl_extensions:
            - xdebug
 
@@ -26,7 +26,7 @@ Available variables are listed below, along with default values:
       vars_files:
         - vars/main.yml
       roles:
-        - role: geerlingguy.php-pecl
+        - role: php-pecl
           php_pecl_extensions:
             - yaml
           php_pecl_apt_packages:
