@@ -1,5 +1,7 @@
 # Ansible Role: PHP PECL extensions
 
+[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-php-pecl.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-php-pecl)
+
 Installs PHP PECL extensions on servers with PHP already installed.
 
 ## Requirements
@@ -8,7 +10,7 @@ PHP must already be installed on the server, so the `pecl` command can be run.
 
 ## Role Variables
 
-Available variables are listed below, along with default values (see `vars/main.yml`):
+Available variables are listed below, along with default values (see `defaults/main.yml`):
 
     php_pecl_extensions:
       - xdebug
@@ -32,10 +34,6 @@ A list of extensions that should be installed via `pecl install`.
 
     php_pecl_extensions:
       - xdebug
-
-## TODO
-
-  - Continue refining the `changed`/`failed` conditions for PECL. Yuck.
 
 ## License
 
