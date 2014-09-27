@@ -6,7 +6,7 @@ Installs PHP PECL extensions on servers with PHP already installed.
 
 ## Requirements
 
-PHP must already be installed on the server, so the `pecl` command can be run.
+PHP must already be installed on the server (along with the package `php-pear`), so the `pecl` command can be run.
 
 ## Role Variables
 
