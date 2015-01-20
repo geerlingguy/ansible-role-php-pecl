@@ -12,11 +12,12 @@ PHP must already be installed on the server (along with the package `php-pear`),
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
+    php_pecl_extensions: []
+
+A list of extensions that should be installed via `pecl install`. If you'd like to have this role install extensions like XDebug, just add it in the list, like so:
+
     php_pecl_extensions:
       - xdebug
-      ...
-
-A list of extensions that should be installed via `pecl install`.
 
 ## Dependencies
 
