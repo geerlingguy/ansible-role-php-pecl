@@ -7,7 +7,7 @@ galaxy_info:
   description: PHP PECL extension installation.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
-  min_ansible_version: 1.4
+  min_ansible_version: 1.9
   platforms:
   - name: EL
     versions:
