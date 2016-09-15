@@ -5,7 +5,7 @@
     php_enable_webserver: false
     php_enablerepo: "remi,remi-php70"
 
-  pre_tests:
+  pre_tasks:
     - name: Ensure build dependencies are installed (RedHat).
       yum: name=which state=present
       when: ansible_os_family == 'RedHat'
