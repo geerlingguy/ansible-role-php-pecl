@@ -1,4 +1,8 @@
 ---
+- name: Updating PECL channels.
+  shell: pecl update-channels
+  register: pecl_updatechannels
+  changed_when: "'succeeded' in pecl_updatechannels"
 - name: Install PECL libaries.
   shell: "yes \"\" | {{ php_pecl_install_command }} {{ item }}"
   register: pecl_result
