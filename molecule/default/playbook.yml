@@ -5,7 +5,8 @@
 
   vars:
     php_enable_webserver: false
-    php_enablerepo: "remi,remi-php70"
+    php_enablerepo: "remi,remi-php72"
+    php_default_version_debian: "7.2"
     php_pecl_extensions:
       - redis
 
