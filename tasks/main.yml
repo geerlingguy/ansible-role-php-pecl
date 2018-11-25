@@ -11,6 +11,9 @@
     state: present
   when: php_pecl_install_pecl
 
+- name: Update pecl.php.net protocols
+  shell: "{{php_pecl_channel_update_command}} pecl.php.net"
+
 - name: Install PECL libaries.
   shell: "yes '' | {{ php_pecl_install_command }} {{ item }}"
   register: pecl_result

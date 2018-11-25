@@ -3,6 +3,8 @@ php_pecl_install_pecl: false
 
 php_pecl_install_command: "pecl install"
 
+php_pecl_channel_update_command: "pecl channel-update"
+
 # Add extensions to this list to have them installed with this role.
 php_pecl_extensions: []
 # - xdebug
