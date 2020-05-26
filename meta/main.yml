@@ -3,7 +3,8 @@ dependencies:
   - geerlingguy.php
 
 galaxy_info:
-  role_name: php-pecl
+  # See: https://github.com/ansible/galaxy/issues/2393
+  # role_name: php-pecl
   author: geerlingguy
   description: PHP PECL extension installation.
   company: "Midwestern Mac, LLC"
