@@ -1,6 +1,6 @@
 # Ansible Role: PHP PECL extensions
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-php-pecl.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-php-pecl)
+[![CI](https://github.com/geerlingguy/ansible-role-php-pecl/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-php-pecl/actions?query=workflow%3ACI)
 
 Installs PHP PECL extensions (and optionally `pecl` itself) on servers with PHP already installed.
 
