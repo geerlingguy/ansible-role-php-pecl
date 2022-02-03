@@ -12,7 +12,7 @@
     state: present
   when: php_pecl_install_pecl
 
-- name: Install PECL libaries.
+- name: Install PECL libraries.
   shell: "yes '' | {{ php_pecl_install_command }} {{ item }}"
   register: pecl_result
   changed_when: pecl_result is succeeded
