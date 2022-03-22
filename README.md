@@ -30,10 +30,6 @@ A list of extensions that should be installed via `pecl install`. If you'd like 
       - redis
       - xdebug
 
-## Dependencies
-
-  - geerlingguy.php
-
 ## Example Playbook
 
     - hosts: webservers
